@@ -27,6 +27,7 @@ const allImages = document.querySelectorAll ('.slider > .images > img');
 // Seleziono il bottone next
 const btnNext = document.querySelector ('.next');
 
+
 // Al click
 
 btnNext.addEventListener('click', function(){
@@ -50,7 +51,7 @@ btnNext.addEventListener('click', function(){
     const nextImg = allImages[activeImage];
 
     nextImg.classList.add('active');  
-   
+
 })
  
 // Seleziono il bottone prev
