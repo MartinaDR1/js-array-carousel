@@ -24,13 +24,14 @@ for (let i = 0; i < images.length; i++){
 // Seleziono tutte le immagini
 const allImages = document.querySelectorAll ('.slider > .images > img');
 
-// Seleziono il bottone
+// Seleziono il bottone next
 const btnNext = document.querySelector ('.next');
 
 // Al click
 
 btnNext.addEventListener('click', function(){
     console.log('click');
+
     // Seleziono l'immagine attiva
     const imagesActive = allImages[activeImage];
 
@@ -40,8 +41,43 @@ btnNext.addEventListener('click', function(){
     //Incremento
     activeImage ++
 
+    //Loop per le immagini
+    if (activeImage >= images.length) {
+        activeImage = 0;
+    }
+
     //Selezione l'immagine successiva
     const nextImg = allImages[activeImage];
 
-    nextImg.classList.add('active')
+    nextImg.classList.add('active');  
+   
+})
+ 
+// Seleziono il bottone prev
+const btnPrev = document.querySelector ('.prev');
+
+// Al click
+
+btnPrev.addEventListener('click', function(){
+    console.log('click');
+
+    // Seleziono l'immagine attiva
+    const imagesActive = allImages[activeImage];
+
+    // Rimuovo l'active
+    imagesActive.classList.remove('active');
+    
+    //Decremento
+    activeImage --
+
+    //Loop per le immagini
+    if (activeImage <= images.length) {
+        activeImage = 4;
+    }
+
+    //Selezione l'immagine successiva
+    const nextImg = allImages[activeImage];
+
+    nextImg.classList.add('active');  
+   
 })
