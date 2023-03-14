@@ -13,26 +13,38 @@
     <title>Carosello</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <div class="card">
-                    <div class="slider">
-                        <button class="prev"> <i class="fa-solid fa-chevron-up"></i></button>
-                        <div class="images">
-                            <!--
-                            <img class="img-fluid active" src="./assets/img/01.webp" alt="">
-                            <img class="img-fluid" src="./assets/img/02.webp" alt="">
-                            <img class="img-fluid" src="./assets/img/03.webp" alt="">
-                            <img class="img-fluid" src="./assets/img/04.webp" alt="">
-                            <img class="img-fluid" src="./assets/img/05.webp" alt="">
-                            -->    
-                        </div>
-                        <button class="next"> <i class="fa-solid fa-chevron-down"></i></button>
-                    </div>
+    <div class="ms_container d-flex">
+        
+        <div class= "ms_container_slide">
+                
+            <div class="slider">
+                        
+                <div class="images">
+                    <!--
+                    <img class="img-fluid active" src="./assets/img/01.webp" alt="">
+                    <img class="img-fluid" src="./assets/img/02.webp" alt="">
+                    <img class="img-fluid" src="./assets/img/03.webp" alt="">
+                    <img class="img-fluid" src="./assets/img/04.webp" alt="">
+                    <img class="img-fluid" src="./assets/img/05.webp" alt="">
+                    -->    
                 </div>
+                        
             </div>
+                    
         </div>
+                
+        <nav class=" my_nav flex-column">
+            <button id="top" class="prev"> <i class="fa-solid fa-chevron-up"></i></button>
+
+            <div id="spider-man" class="ms_box border"></div>
+            <div id="ratchet" class="ms_box border"></div>
+            <div id="fortnite" class="ms_box border"></div>
+            <div id="stray" class="ms_box border"></div>
+            <div id="avengers" class="ms_box border"></div>
+
+            <button id="bottom" class="next"> <i class="fa-solid fa-chevron-down"></i></button>
+        </nav>
+       
          
     </div>
 

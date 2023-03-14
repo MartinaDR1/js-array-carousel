@@ -1,9 +1,66 @@
+img{
+    max-width: 100%;
+    max-height: 400px;
+}
 
 .images img:not(.active) {
     display: none;
 }
 
+.ms_container{
+    width: ;
+}
+/* nav-*/ 
+
+.my_nav{
+    position: relative;
+    width: 30rem;
+    background-color: blue;
+}
+
+.ms_box{
+   height: calc(100% / 5); 
+   flex-wrap: nowrap;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#spider-man{
+    background-image: url(../img/01.webp);
+   
+}
+
+#ratchet{
+    background-image: url(../img/02.webp);
+}
+
+#fortnite{
+    background-image: url(../img/03.webp);
+}
+
+#stray{
+    background-image: url(../img/04.webp);
+}
+
+#avengers{
+    background-image: url(../img/05.webp);
+}
 
 button{
     border-radius: 50%;
+    background-color: lightgray;
+    border: none;
+    position: absolute;
 }
+
+#top{
+    top: 0px;
+    right: 180px;
+}
+
+#bottom{
+    bottom: 0px;
+    right: 180px;
+}
+

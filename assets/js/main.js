@@ -71,7 +71,7 @@ btnPrev.addEventListener('click', function(){
     activeImage --
 
     //Loop per le immagini
-    if (activeImage <= images.length) {
+    if (activeImage < 0 ) {
         activeImage = 4;
     }
 
